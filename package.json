@@ -1,11 +1,11 @@
 {
-  "name": "Vibell",
+  "name": "vibell",
   "version": "0.0.1",
-  "description": "Vibell",
+  "description": "Vibell Raspberry Pi server",
   "main": "app.js",
   "author": {
-    "name": "Ola",
-    "email": ""
+    "name": "pkdev14",
+    "email": "pkdev14@gmail.com"
   },
   "dependencies": {
     "sensors-io": "0.0.6",
