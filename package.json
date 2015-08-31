@@ -1,6 +1,6 @@
 {
   "name": "vibell",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vibell Raspberry Pi server",
   "main": "app.js",
   "author": {

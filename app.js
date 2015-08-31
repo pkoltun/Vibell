@@ -11,6 +11,9 @@ var gpioSensors = rpiSensors.GPIOSensors;
 // -------------------Configuration------------------------------------------------
 // Default port used by node app.
 var port = process.env.port || 1337;
+
+var multicastInterface ="eth0"; 
+
 // Linux audio input and output device.
 var inputDevice = "plughw:Set";
 var outputDevice = "plughw:Set";
@@ -54,10 +57,10 @@ var speaker = new rpiGS.Speaker(null, true, null);
 var mic = new rpiGS.Microphone();
 var ring = new rpiRing.Ring();
 
-camera.setState( { on: true });// start camera  
-mic.setState({ device: inputDevice});
-speaker.setState({ device: outputDevice});
-ring.setState({ device: outputDevice});
+camera.setState( { on: true,multicastIface: multicastInterface });  
+mic.setState({ device: inputDevice, multicastIface: multicastInterface});
+speaker.setState({ device: outputDevice,multicastIface: multicastInterface});
+ring.setState({ device: outputDevice,multicastIface: multicastInterface});
 
 if ( soundFile !== ""){
 	ring.setState( {soundFile: soundFile});
