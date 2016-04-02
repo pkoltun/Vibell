@@ -1,6 +1,6 @@
 {
   "name": "vibell",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Vibell Raspberry Pi server",
   "main": "app.js",
   "author": {
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "sensors-io": "0.0.6",
-    "sensors-io-rpi": "0.0.8",
+    "sensors-io-rpi": "0.0.9",
     "sensors-io-web": "0.0.5",
     "socket.io": "^1.3.5"
   }
